@@ -1,0 +1,232 @@
+{
+  "name": "Indoors Bookshelf With Books",
+  "orientations": {
+    "N": {
+      "images": {
+        "4fZrZg7G71lAAVhARrcK": {
+          "url": "https://d3h1zul4851uz4.cloudfront.net/I851i0YbFYroju8MxufB/viETeW0_l_hY3sa8cWr6x",
+          "transform": {
+            "position": {
+              "x": 44.55202741081234,
+              "y": 205.20933837707514
+            },
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+
+            "frontPoint": {
+              "x": 121.67418670654297,
+              "y": -338.3175964355469
+            }
+          },
+          "type": "image",
+          "primitives": {
+            "bbtX-tAEE5CN1b7EHUeV": {
+              "shape": {
+                "position": {
+                  "y": 248.30909729003906,
+                  "x": 247.18297958374023
+                },
+                "shape": "rect",
+                "scale": {
+                  "x": 405.17774200439453,
+                  "y": 146.17111206054688
+                }
+              },
+              "shadowType": "rect",
+              "type": "shadow"
+            },
+            "Z0uHQlJt0sH54C8CM9QT": {
+              "type": "collider",
+
+              "height": 430.37113189697266,
+              "shape": {
+                "scale": {
+                  "y": 133.78382873535156,
+                  "x": 395.042724609375
+                },
+                "shape": "rect",
+                "position": {
+                  "y": 243.24156951904297,
+                  "x": 240.98934936523438
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "E": {
+      "images": {
+        "lcuMqhe8jHxHaKJHvxXD": {
+          "url": "https://d3h1zul4851uz4.cloudfront.net/I851i0YbFYroju8MxufB/1Ugoo2zKvWH0G938FPdAC",
+          "transform": {
+            "position": {
+              "x": -44.573295491550596,
+              "y": 225.48152800818264
+            },
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+
+            "frontPoint": {
+              "x": -121.73658752441406,
+              "y": -330.3455810546875
+            }
+          },
+          "type": "image",
+          "primitives": {
+            "ekq3izlRPvR7xcQ-KbZw": {
+              "shape": {
+                "position": {
+                  "y": 244.93074417114258,
+                  "x": 243.80462646484375
+                },
+                "scale": {
+                  "y": 389.4121322631836,
+                  "x": 121.39654541015625
+                },
+                "shape": "rect"
+              },
+              "type": "collider",
+
+              "height": 432.3855895996094
+            },
+            "cE2lDtVawzHt1GPo5ONq": {
+              "type": "shadow",
+              "shadowType": "rect",
+              "shape": {
+                "scale": {
+                  "x": 138.288330078125,
+                  "y": 404.05166244506836
+                },
+                "position": {
+                  "x": 249.998291015625,
+                  "y": 249.99827766418457
+                },
+
+                "shape": "rect"
+              }
+            }
+          }
+        }
+      }
+    },
+    "S": {
+      "images": {
+        "sMjsjhHKDflhbnMTcJnh": {
+          "url": "https://d3h1zul4851uz4.cloudfront.net/I851i0YbFYroju8MxufB/JPUdLgXT_T6tF7Qus15sF",
+          "transform": {
+            "position": {
+              "x": 47.91654696217148,
+              "y": 220.7456789393941
+            },
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+
+            "frontPoint": {
+              "x": 121.7405014038086,
+              "y": -330.3377685546875
+            }
+          },
+          "type": "image",
+          "primitives": {
+            "NkjhNQCt5-0yDYjBCs6R": {
+              "shadowType": "rect",
+              "shape": {
+                "scale": {
+                  "y": 142.7928009033203,
+                  "x": 408.5561637878418
+                },
+
+                "shape": "rect",
+                "position": {
+                  "x": 244.36770057678223,
+                  "y": 246.61992645263672
+                }
+              },
+              "type": "shadow"
+            },
+            "6a1cpwBhb2tp1MCbzNif": {
+              "shape": {
+                "scale": {
+                  "y": 119.14430236816406,
+                  "x": 391.66431045532227
+                },
+                "position": {
+                  "x": 246.05685234069824,
+                  "y": 251.68746185302734
+                },
+
+                "shape": "rect"
+              },
+
+              "type": "collider",
+              "height": 440.44342041015625
+            }
+          }
+        }
+      }
+    },
+    "W": {
+      "images": {
+        "opNan5XlmLVnFk8pphxG": {
+          "url": "https://d3h1zul4851uz4.cloudfront.net/I851i0YbFYroju8MxufB/K3pUBc2Du8ZX5MvLjEpwX",
+          "transform": {
+            "position": {
+              "x": -63.45288752449039,
+              "y": 210.60958412384036
+            },
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+
+            "frontPoint": {
+              "x": -122.34046936035156,
+              "y": -326.95953369140625
+            }
+          },
+          "type": "image",
+          "primitives": {
+            "5Ms3TuIHC_FxbVA25f5j": {
+              "type": "collider",
+
+              "shape": {
+                "shape": "rect",
+                "position": {
+                  "y": 241.55238723754883,
+                  "x": 244.93074798583984
+                },
+                "scale": {
+                  "x": 128.1532745361328,
+                  "y": 396.1688461303711
+                }
+              },
+              "height": 432.3855895996094
+            },
+            "vF73iXV6QVpLgaGKzVSo": {
+              "type": "shadow",
+              "shape": {
+                "shape": "rect",
+                "position": {
+                  "x": 251.1243896484375,
+                  "y": 246.61991691589355
+                },
+                "scale": {
+                  "y": 410.8083839416504,
+                  "x": 145.0450439453125
+                }
+              },
+              "shadowType": "rect"
+            }
+          }
+        }
+      }
+    }
+  }
+}

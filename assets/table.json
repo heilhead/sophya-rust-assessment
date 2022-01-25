@@ -1,0 +1,118 @@
+{
+  "name": "Square Wood Table",
+  "orientations": {
+    "N": {
+      "images": {
+        "4A17BOtdbnoQLn1SOZCx": {
+          "url": "https://d3h1zul4851uz4.cloudfront.net/2SET0ZP3aKf0gM7MhnFh/T5tmvgikl_Ir2BcTeuV8C",
+          "transform": {
+            "position": {
+              "x": 0,
+              "y": 86.55890432502895
+            },
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+
+            "frontPoint": {
+              "x": 24.108102798461914,
+              "y": -130.6820068359375
+            }
+          },
+          "type": "image",
+          "primitives": {
+            "6pPsEFQbJut5TmgLLVuH": {
+              "shape": {
+                "scale": {
+                  "y": 157.5788869857788,
+                  "x": 216.8346710205078
+                },
+                "shape": "rect",
+                "position": {
+                  "x": 84.69121551513672,
+                  "y": 85.2502293586731
+                }
+              },
+              "shadowType": "rect",
+              "type": "shadow"
+            },
+            "uqnUFzLCpPt7HdaDHTxB": {
+              "shape": {
+                "position": {
+                  "x": 74.06987762451172,
+                  "y": 75.74692463874817
+                },
+                "scale": {
+                  "y": 156.46086263656616,
+                  "x": 222.4248504638672
+                },
+                "shape": "rect"
+              },
+              "type": "collider",
+
+              "height": 100
+            }
+          }
+        }
+      }
+    },
+    "E": {
+      "images": {
+        "R0nlku8sf6iksSbAi9e6": {
+          "url": "https://d3h1zul4851uz4.cloudfront.net/2SET0ZP3aKf0gM7MhnFh/i4imZMP3TTNMRtNREDpiY",
+          "transform": {
+            "position": {
+              "x": 2.3500614366912487,
+              "y": 83.70380907485958
+            },
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+
+            "frontPoint": {
+              "x": -28.456981658935547,
+              "y": -128.2842559814453
+            }
+          },
+          "type": "image",
+          "primitives": {
+            "ptf0mI7J2FtvMGIcWppj": {
+              "height": 108.10037231445312,
+              "shape": {
+                "position": {
+                  "x": 86.41413903236389,
+                  "y": 85.65942287445068
+                },
+                "scale": {
+                  "x": 164.15026807785034,
+                  "y": 216.97976875305176
+                },
+
+                "shape": "rect"
+              },
+
+              "type": "collider"
+            },
+            "OY3GdXsiNHco-Nesc0HM": {
+              "type": "shadow",
+              "shadowType": "rect",
+              "shape": {
+                "shape": "rect",
+                "position": {
+                  "y": 87.1688461303711,
+                  "x": 87.92355394363403
+                },
+                "scale": {
+                  "x": 164.15026760101318,
+                  "y": 210.9420928955078
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
