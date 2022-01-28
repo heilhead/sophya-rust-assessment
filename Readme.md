@@ -61,3 +61,7 @@ Coordinate Definitions:
             - shape: positional data in `isometric space` _relative_ to the origin of the image
           - `collider` type
             - shape: also position data in the `isometric space`, has a height value for accurate collider creation
+
+## Result
+
+[Demo video](https://youtu.be/FXlsV4iHziI)
