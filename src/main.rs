@@ -12,12 +12,10 @@ use macroquad::prelude::*;
 async fn main() -> anyhow::Result<()> {
     println!("creating demo scene...");
 
-    let mut demo = DemoScene::new(0.25)?;
+    let mut demo = DemoScene::new()?;
 
     println!("populating world...");
 
-    // Set up the demo scene. This would be loaded from some kind of scene file. For the purpose
-    // of this demo though we spawn hardcoded objects.
     demo.populate_scene()?;
 
     println!("entering game loop...");
@@ -25,7 +23,6 @@ async fn main() -> anyhow::Result<()> {
     loop {
         let dt = macroquad::time::get_frame_time();
         demo.update(dt);
-        demo.render();
         next_frame().await;
     }
 }

@@ -1,5 +1,5 @@
 use macroquad::math::*;
-use rapier3d::prelude::*;
+pub use rapier3d::prelude::*;
 
 pub struct PhysicsWorld {
     rigid_body_set: RigidBodySet,
@@ -34,7 +34,7 @@ impl PhysicsWorld {
         }
     }
 
-    pub fn step(&mut self, dt: f32) {
+    pub fn update(&mut self, dt: f32) {
         let gravity = vector![0.0, 0.0, 0.0];
         let physics_hooks = ();
         let event_handler = ();

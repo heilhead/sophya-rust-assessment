@@ -13,14 +13,10 @@ pub struct WorldSpaceRectDrawCall {
 
 impl WorldSpaceRectDrawCall {
     pub fn draw(&self) {
-        // Seems to be something wrong with the world-to-screen matrix, so we manually invert Y-axis
-        // in the screen space.
-        let invert = vec2(1.0, -1.0);
-
-        let v1 = world_to_screen(self.origin) * invert;
-        let v2 = world_to_screen(self.origin + vec2(self.extent.x, 0.0)) * invert;
-        let v3 = world_to_screen(self.origin + vec2(self.extent.x, self.extent.y)) * invert;
-        let v4 = world_to_screen(self.origin + vec2(0.0, self.extent.y)) * invert;
+        let v1 = world_to_screen(self.origin);
+        let v2 = world_to_screen(self.origin + vec2(self.extent.x, 0.0));
+        let v3 = world_to_screen(self.origin + vec2(self.extent.x, self.extent.y));
+        let v4 = world_to_screen(self.origin + vec2(0.0, self.extent.y));
 
         // Drawing as separate triangles is obviously suboptimal, but in the interests of time we
         // won't be combining quads into a single mesh.
@@ -41,15 +37,16 @@ pub struct SpriteDrawCall {
 
 impl SpriteDrawCall {
     pub fn draw(&self) {
-        let params = DrawTextureParams {
-            dest_size: Some(self.extent),
-            flip_x: self.flip_x,
-            flip_y: self.flip_y,
-            ..Default::default()
-        };
-        let tex = self.texture.as_ref().unwrap();
+        if let Some(texture) = &self.texture {
+            let params = DrawTextureParams {
+                dest_size: Some(self.extent),
+                flip_x: self.flip_x,
+                flip_y: self.flip_y,
+                ..Default::default()
+            };
 
-        draw_texture_ex(**tex.as_ref(), self.origin.x, self.origin.y, WHITE, params);
+            draw_texture_ex(**texture.as_ref(), self.origin.x, self.origin.y, WHITE, params);
+        }
     }
 }
 

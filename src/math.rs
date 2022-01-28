@@ -18,10 +18,12 @@ static SCREEN_TO_WORLD_MATRIX: Lazy<Mat2> = Lazy::new(|| WORLD_TO_SCREEN_MATRIX.
 
 #[must_use]
 pub fn screen_to_world(input: Vec2) -> Vec2 {
-    *SCREEN_TO_WORLD_MATRIX * input
+    *SCREEN_TO_WORLD_MATRIX * (input * vec2(1.0, -1.0))
 }
 
 #[must_use]
 pub fn world_to_screen(input: Vec2) -> Vec2 {
-    *WORLD_TO_SCREEN_MATRIX * input
+    // Had to invert Y-axis to match the coordinate system suggested in the task description.
+    // Maybe there's an error in my calculations though...
+    *WORLD_TO_SCREEN_MATRIX * input * vec2(1.0, -1.0)
 }

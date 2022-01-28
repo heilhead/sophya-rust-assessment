@@ -25,6 +25,22 @@ pub struct PhysicsBodyCollectionComponent {
 }
 
 #[derive(Bundle)]
+pub struct CharacterVelocityComponent {
+    pub velocity: Vec2,
+}
+
+#[derive(Bundle)]
+pub struct CharacterTransformComponent {
+    pub offset: Vec2,
+    pub front_point: Vec2,
+}
+
+#[derive(Bundle)]
+pub struct PhysicsBodyComponent {
+    pub handle: RigidBodyHandle,
+}
+
+#[derive(Bundle)]
 pub struct SceneObjectShadowComponent {
     pub primitives: Vec<AssetPrimitive>,
     pub draw_calls: Vec<WorldSpaceRectDrawCall>,
@@ -44,20 +60,4 @@ impl SceneObjectShadowComponent {
             self.draw_calls.push(WorldSpaceRectDrawCall { origin, extent, color });
         }
     }
-}
-
-#[derive(Bundle)]
-pub struct CharacterVelocityComponent {
-    pub velocity: Vec2,
-}
-
-#[derive(Bundle)]
-pub struct CharacterTransformComponent {
-    pub offset: Vec2,
-    pub front_point: Vec2,
-}
-
-#[derive(Bundle)]
-pub struct PhysicsBodyComponent {
-    pub handle: RigidBodyHandle,
 }
