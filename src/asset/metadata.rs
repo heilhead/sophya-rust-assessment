@@ -42,6 +42,8 @@ pub struct AssetMetadata {
 
 impl AssetMetadata {
     pub fn get_orientation(&self, orientation: AssetOrientation) -> anyhow::Result<&AssetOrientationData> {
+        // Looking back, this and a couple of similar methods should actually return `Option`
+        // instead of `Result` with the caller deciding if it wants to bail or continue.
         if let Some(orientation_data) = self.orientations.get(&orientation) {
             Ok(orientation_data)
         } else {

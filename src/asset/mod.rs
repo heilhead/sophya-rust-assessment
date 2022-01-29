@@ -15,6 +15,7 @@ pub struct Asset {
 
 impl Asset {
     pub fn get_texture_resource(&self, name: &String) -> anyhow::Result<TextureResource> {
+        // This should probably return `Option` instead of `Result`.
         if let Some(tex) = self.resources.get(name) {
             Ok(tex.clone())
         } else {
