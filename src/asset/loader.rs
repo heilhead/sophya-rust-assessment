@@ -99,5 +99,6 @@ pub fn load_texture_from_file(path: &str) -> anyhow::Result<TextureResource> {
     let mut stream = BufReader::new(File::open(path)?);
     let mut buffer = vec![];
     stream.read_to_end(&mut buffer)?;
+
     Ok(create_texture_resource(bytes::Bytes::from(buffer)))
 }

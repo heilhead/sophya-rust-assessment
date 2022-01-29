@@ -52,7 +52,7 @@ impl SpriteDrawCall {
 
 pub fn render_background_geometry(world: &mut hecs::World) {
     // This renders shadows without sorting, since they'll always be behind other objects.
-    for (_, shadow) in world.query_mut::<&mut SceneObjectShadowComponent>() {
+    for (_, shadow) in world.query_mut::<&SceneObjectShadowComponent>() {
         // Dispatch draw calls.
         for draw_call in &shadow.draw_calls {
             draw_call.draw();

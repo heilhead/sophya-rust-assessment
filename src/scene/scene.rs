@@ -68,9 +68,7 @@ impl Scene {
             position,
             self.scale,
             orientation,
-        )?;
-
-        Ok(())
+        )
     }
 
     pub fn spawn_player(&mut self, params: CharacterSpawnParams) {
@@ -253,7 +251,7 @@ pub fn spawn_static_scene_object(
                         primitive_half_height,
                     );
 
-                    let collider_extent = vec3(
+                    let collider_half_extent = vec3(
                         primitive_half_extent_2d.x,
                         primitive_half_extent_2d.y,
                         primitive_half_height,
@@ -261,7 +259,7 @@ pub fn spawn_static_scene_object(
 
                     // Again, the assumption here is that scene objects are immovable and have fully
                     // static physics bodies.
-                    physics.create_body_cuboid(RigidBodyType::Static, body_origin, collider_extent)
+                    physics.create_body_cuboid(RigidBodyType::Static, body_origin, collider_half_extent)
                 })
                 .collect();
 
